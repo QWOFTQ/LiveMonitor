@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('/api/message')
+    fetch('https://inspiring-duckanoo-bf7762.netlify.app/api/message')
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error:', error));
